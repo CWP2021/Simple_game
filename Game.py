@@ -1,8 +1,14 @@
+#Description: A simple game that allows the user to choose a move, attack and get attacked. Attacks result in the loss of lives.
+
 lifecount = [1,1,1]
 lifecount2 = [1,1,1]
 lifecount3 = [1,1,1]
 mylifecount = [1,1,1]
-print('Introduction part')
+print('Welcome to the game. Your goal is to defeat your enemies by attacking them. But be careful, as they will attack you, too! '
+      'There are 3 enemies. '
+      'You and they have 3 lives each. If you attack Enemy 1, they will loose a life, but will not attack you. '
+      'If you attack Enemy 2, you will both loose one life. If you attack Enemy 3, it will only cost you a life. '
+      'You can only defeat Enemy 2 and 3 with a special move. In order to unlock it, defeat Enemy 1. Ready? Let us begin!')
 class Enemy:
     def attack(self):
         lifecount.pop(0)
